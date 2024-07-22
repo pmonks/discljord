@@ -495,7 +495,7 @@
 (defdispatch :add-guild-member
   [guild-id user-id access-token] [] opts :put status body
   (str "/guilds/" guild-id "/members/" user-id)
-  {:query-params (assoc opts :access_token access-token)}
+  {:body (json/write-str (assoc opts :access_token access-token))}
   (if (= status 204)
     :already-member
     (json-body body)))

@@ -422,7 +422,7 @@
   [limit])
 
 (defendpoint add-guild-member! ::ds/guild-id
-  "NOT INTENDED FOR BOT USE. Adds a user to a guild. Requires an access token. Returns a promise containing the keyword :already-member if the user is already a member, or the guild member object."
+  "Adds a user to a guild. Requires an Oauth2 access token with scope guilds.join for that user. Returns a promise containing the keyword :already-member if the user is already a member, or the guild member object."
   [user-id access-token]
   [nick roles mute deaf])
 

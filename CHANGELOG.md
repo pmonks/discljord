@@ -17,6 +17,7 @@ Discljord follows semantic versioning.
 - Deprecated `batch-edit-application-command-permissions!` because it doesn't work anymore
 
 ### Fixed
+- `add-guild-members!` endpoint was outdated; can now be used by bots.
 - `edit-{global|guild}-application-command!` endpoints incorrectly expecting name and description as mandatory arguments
 - `with-counts?` parameter in `get-invite!` -> `with-counts`
 - Fix incorrect parsing behaviour by `parse-if-str` for leading 0s
