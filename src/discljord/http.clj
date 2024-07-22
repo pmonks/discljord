@@ -4,11 +4,11 @@
 
 (def rest-version
   "The Discord API version that discljord uses in HTTP requests."
-  9)
+  10)
 
 (def gateway-version
   "The Discord API version that discljord uses for the gateway connection."
-  9)
+  10)
 
 (defn api-url
   "Takes an endpoint from Discord's API (with a starting '/'), and returns
